@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090d16" />
+  <meta name="description" content="Portafolio profesional de desarrollo de experiencias 3D interactivas con Three.js y analíticas avanzadas para YouTube." />
+  <title>Innovación 3D & Analítica para YouTube | DATUSA 3D</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">DATUSA<span>3D</span></a>
+      <nav class="nav-links">
+        <a href="#experiencia-3d">Experiencia 3D</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <!-- Reemplaza con tu número de teléfono de WhatsApp (formato internacional sin signos ni espacios, ej: 5215512345678) -->
+        <a href="https://wa.me/5215544488610?text=Hola,%20me%20interesa%20contratar%20tus%20servicios%20de%20desarrollo%203D%20y%20analítica." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECCIÓN HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="badge">🚀 DESARROLLO WEB EN TRES DIMENSIONES</span>
+        <h1>Transformamos datos de YouTube en <span class="gradient-text">Escenas 3D Inmersivas</span></h1>
+        <p class="hero-subtitle">
+          Fusionamos el desarrollo web de alto rendimiento con gráficos tridimensionales interactivos para llevar la analítica de contenido y el diseño digital al siguiente nivel.
+        </p>
+        <div class="hero-buttons">
+          <a href="#experiencia-3d" class="btn btn-primary">Explorar Escena 3D</a>
+          <a href="mailto:datusa777@gmail.com?subject=Interés%20en%20servicios%203D%20y%20analítica" class="btn btn-secondary">Enviar Correo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN INTERACTIVA DE THREE.JS (IMPACTANTE) -->
+    <section id="experiencia-3d" class="section-3d-showcase">
+      <div class="section-header">
+        <span class="kicker">INTERACTIVIDAD EN TIEMPO REAL</span>
+        <h2>Escena 3D Generativa & Analítica</h2>
+        <p>Mueve el cursor o arrastra la escena para interactuar con el entorno tridimensional en tiempo real.</p>
+      </div>
+
+      <div class="canvas-container">
+
+        
+  <canvas id="hero-canvas" aria-label="Escena interactiva en 3D con Three.js"></canvas>
+  
+  <!-- TOOLTIP FLOTANTE -->
+  <div id="chart-tooltip" class="chart-tooltip">
+    <span id="tooltip-label">#01</span>
+    <strong id="tooltip-views">1.2M vistas</strong>
+  </div>
+
+  <div class="canvas-overlay-instruction">
+    <span>✨ Haz clic y arrastra para rotar la estructura</span>
+  </div>
+
+        <canvas id="hero-canvas" aria-label="Escena interactiva en 3D con Three.js"></canvas>
+        <div class="canvas-overlay-instruction">
+          <span>Haz clic y arrastra para rotar la estructura</span>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN DE ESCENAS 3D EN CLOUDFLARE CON INTERSECTION OBSERVER -->
+    <section id="escenas-cloudflare" class="cloudflare-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="kicker">EXPERIENCIAS INMERSIVAS</span>
+          <h2>Escenas 3D en Cloudflare</h2>
+          <p>Explora interactivos en tiempo real alojados en la nube y optimizados para la web.</p>
+        </div>
+
+        <div class="iframe-wrapper">
+          <!-- Contenedor de carga mientras entra en vista -->
+          <div id="iframe-loader" class="iframe-loader">
+            <span>Cargando escena 3D desde Cloudflare…</span>
+          </div>
+
+          <!-- El atributo data-src se usará para inyectar el iframe de forma diferida -->
+          <iframe
+            id="cloudflare-iframe"
+            data-src="https://datusaoceano.datusa777.workers.dev/"
+            title="Escena 3D interactiva en Cloudflare"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS / SOLUCIONES -->
+    <section id="servicios" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="kicker">LO QUE OFRECEMOS</span>
+          <h2>Soluciones Digitales de Alto Rendimiento</h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Dashboards de YouTube</h3>
+            <p>Visualización de métricas clave (vistas, likes, engagement y promedios diarios) conectadas mediante APIs de forma limpia y moderna.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Escenas 3D con Three.js</h3>
+            <p>Desarrollo a la medida de entornos 3D optimizados para web (Vite/Vanilla JS), desde gráficos estadísticos hasta experiencias inmersivas.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Rendimiento Extremo</h3>
+            <p>Diseño web ultra ligero sin frameworks pesados, garantizando tiempos de carga veloces y una experiencia de usuario fluida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO DIRECTO -->
+    <section id="contacto" class="contact-section">
+      <div class="container contact-card">
+        <h2>¿Listo para impulsar tu proyecto?</h2>
+        <p>Conversemos sobre tu visión. Contáctame de forma directa a través de mis canales oficiales.</p>
+        <div class="contact-buttons">
+          <a href="https://wa.me/5215544488610?text=Hola,%20me%20gustaría%20cotizar%20un%20proyecto%20web%203D." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            💬 Escríbenos por WhatsApp
+          </a>
+          <a href="mailto:datusa777@gmail.com?subject=Proyecto%20Web%203D" class="btn btn-primary btn-lg">
+            ✉️ Mándanos un Correo
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 DATUSA 3D.</p>
+  </footer>
+
+  <!-- SCRIPT PRINCIPAL -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
